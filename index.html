@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="masthead" class="site-header" role="banner"></header>
+    <div class="row">
+      <div class="column" style="background-color: #dadada; width: 20%">
+        <h1 class="site-title" style="line-height: 46.5px">PROJECTS</h1>
+
+        <p class="site-description">
+          By Yetta Liu <br><br><br>
+          A portfolio website to archive some of my undergrad projects. Projects
+          are dated from 2021 to 2024.
+        </p>
+        <!--menu bar?-->
+        <br /><br />
+        List:
+        <nav class="menu">
+          <li><a href="#square">9x9x9 Square Room</a></li>
+          <li><a href="#18">18x18x18 Living Unit</a></li>
+          <li><a href="#circulation">Circulation &#38; Public Spaces</a></li>
+          <li><a href="#union-hall">Union Hall</a></li>
+          <li><a href="#triangular-house">Triangular House</a></li>
+        </nav>
+        <br><br>
+      </div>
+      <div
+        class="column"
+        style="background-color: white; float: right; width: 70%"
+      >
+        <div id="square">
+        <h2> 9x9x9 Square Room</h2>
+        <!--Insert images-->
+          <img
+              src="https://cdn.glitch.global/1b5c34ed-dfe4-4f65-8242-7719b38a2880/9x9room.png?v=1713976614200"
+              alt="9x9"
+              width="1000"/>
+        <p>
+          The 9x9 micro room housing unit interior design. <br />
+          A room with a kitchen, a bathroom, a lofted bed, and a desk.<br>
+          - A digital drawn orthographics.<br />
+          - Architecture Studio 4 Project <br />
+          - Spring 2024
+          </p></div>
+        <br><br>
+        
+         <div id="18">
+        <h2>18x18x18 Living Unit</h2>
+        <!--Insert images-->
+          <img
+              src="https://cdn.glitch.global/1b5c34ed-dfe4-4f65-8242-7719b38a2880/18X18.png?v=1714960301996"
+              width="1000"/>
+        <p>
+          The 18x18 two-stories housing unit model making.<br />
+          - Handmade model with museum board.<br />
+          - Architecture Studio 4 Project <br />
+          - Spring 2024
+          </p></div>
+        <br />
+        <br><br>
+
+       <div id="circulation">
+        <h2>Circulation &#38; Public Spaces</h2>
+        <!--Insert images-->
+        <img
+          src="https://cdn.glitch.global/1b5c34ed-dfe4-4f65-8242-7719b38a2880/sky%20view-ren.png?v=1713382291853"
+          alt="AAVS sky-view"
+          width="1000"
+        />
+        <p>
+          A project to do research on a public space and make a new design
+          proposal for the site. <br />
+          - The project was done with Rhino modeling along with the involvement
+          of AI trained agents with Unity.<br />
+          - Site: Cheonggyecheon, Seoul, South Korea <br />
+          - AAVS Summer program <br />- Summer 2023
+         </p></div>
+        <br />
+        <div id="union-hall">
+        <br><br>
+          <h2>Union Hall</h2>
+          <!--Insert images-->
+          <img
+            src="https://cdn.glitch.global/1b5c34ed-dfe4-4f65-8242-7719b38a2880/Union%20Hall.png?v=1715063949555"
+            alt="union-hall"
+            width="1000"
+          />
+          <p>
+            The designing of a small building that may be used as a union hall
+            including a handful of support spaces and a <br />large, grand room
+            for mass meetings.<br />
+            - Architecture Orthographics done with Rhino, handmade scaled model
+            with museum board.<br />
+            - Architecture Studio 2 Project <br />
+            - Spring 2023
+          </p>
+          <br />
+        </div>
+        <br><br>
+        <div id="triangular-house">
+         <h2>Triangular House</h2>
+        <!--Insert images-->
+        <img
+          src="https://cdn.glitch.global/1b5c34ed-dfe4-4f65-8242-7719b38a2880/Triangular%20h.png?v=1715062837153"
+          alt="parti-Tri-house"
+          width="1000"
+        />
+        
+        <p>
+          A small house designed with the use of parti diagram with the learning
+          of compostition of geometric shapes.<br />
+          - Architecture Orthographics done with Rhino, handmade scaled model
+          with museum board, wood sticks.<br />
+          - Architecture Studio 2 Project <br />
+          - Spring 2023
+          </p></div>
+        <br />
+       
+      </div></div>
+    <h1></h1>
+    <footer class="footer"><marquee> :D :◊ :O :| :/ :( :P </marquee></footer>
+    <script>
+      document
+        .getElementById("union-hall-button")
+        .addEventListener("click", function () {
+          window.scrollTo(0, 2000);
+
+          //document.getElementById('union-hall').scrollIntoView();
+        });
+      function findPosition(obj) {
+        var currenttop = 0;
+        if (obj.offsetParent) {
+          do {
+            currenttop += obj.offsetTop;
+          } while ((obj = obj.offsetParent));
+          return [currenttop];
+        }
+      }
+    </script>
+  </body>
+</html>
